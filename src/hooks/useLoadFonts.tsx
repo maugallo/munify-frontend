@@ -9,7 +9,11 @@ SplashScreen.preventAutoHideAsync();
 export function useLoadFonts() {
     const [fontsLoaded, error] = useFonts({
         "Poppins-Medium": require("../../assets/fonts/Poppins-Medium.ttf"),
-        "Inter-Regular": require("../../assets/fonts/Inter-Regular.ttf")
+        "Poppins-SemiBold": require("../../assets/fonts/Poppins-SemiBold.ttf"),
+        "Poppins-Bold": require("../../assets/fonts/Poppins-Bold.ttf"),
+        "Inter-Regular": require("../../assets/fonts/Inter-Regular.ttf"),
+        "Inter-SemiBold": require("../../assets/fonts/Inter-SemiBold.ttf"),
+        "Inter-Bold": require("../../assets/fonts/Inter-Bold.ttf")
     });
 
     useEffect(() => {

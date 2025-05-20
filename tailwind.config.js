@@ -5,8 +5,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["Poppins-Medium"],
-        inter: ["Inter-Regular"]
+        "poppins-medium": ["Poppins-Medium"],
+        "poppins-semibold": ["Poppins-SemiBold"],
+        "poppins-bold": ["Poppins-Bold"],
+        "inter-regular": ["Inter-Regular"],
+        "inter-semibold": ["Inter-SemiBold"],
+        "inter-bold": ["Inter-Bold"]
       },
     },
   },

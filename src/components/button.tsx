@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Pressable, PressableProps, Text, View } from "react-native";
+import { Text, TouchableOpacity, TouchableOpacityProps, View } from "react-native";
 
 type ButtonProps = {
     text: string;
@@ -8,14 +8,16 @@ type ButtonProps = {
     textClassName?: string;
     iconRight?: ReactNode;
     iconLeft?: ReactNode;
-} & PressableProps
+} & TouchableOpacityProps
 
 export default function Button({ text, onPress, className, textClassName, iconRight, iconLeft }: ButtonProps) {
     return (
-        <Pressable onPress={onPress} className={`flex flex-row justify-center items-center gap-3 ${className}`} >
+        <TouchableOpacity onPress={onPress} activeOpacity={0.7}
+            className={`flex-row items-center justify-center gap-3 rounded-lg px-4 py-3 ${className}`}
+        >
             {iconLeft && <View>{iconLeft}</View>}
             <Text className={`text-center ${textClassName}`}>{text}</Text>
             {iconRight && <View>{iconRight}</View>}
-        </Pressable>
+        </TouchableOpacity>
     );
 }
