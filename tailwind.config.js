@@ -12,6 +12,9 @@ module.exports = {
         "inter-semibold": ["Inter-SemiBold"],
         "inter-bold": ["Inter-Bold"]
       },
+      colors: {
+        primary: "#3E82F7"
+      }
     },
   },
   plugins: [],
