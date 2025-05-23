@@ -1,6 +1,6 @@
-import Button from "@/src/components/button";
-import Header from "@/src/components/header";
-import WelcomeLogo from "@/src/components/illustrations/welcomeLogo";
+import Button from "@/src/shared/components/button";
+import Header from "@/src/shared/components/header";
+import WelcomeLogo from "@/src/shared/components/illustrations/welcomeLogo";
 import AntDesign from '@expo/vector-icons/AntDesign';
 import { router } from "expo-router";
 import { Text, View } from "react-native";
